@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/theme-init.js"></script>
+    <!-- With JavaScript, the static text copy (.prerender) stays hidden until React replaces it, so it can't shift as fonts load. -->
+    <script>document.documentElement.classList.add('js')</script>
+    <!-- Page-specific tags below are rewritten for each route by scripts/prerender.mjs. -->
+    <title>Host a Minecraft Server on Your Android Phone (Free)</title>
+    <meta name="description" content="Run a real Minecraft: Java server on your Android phone with the free VoxelPort app. Friends join from anywhere, no port forwarding, Java + Bedrock." />
+    <link rel="canonical" href="https://voxelport.github.io/guides/host-minecraft-server-android-phone" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="VoxelPort" />
+    <meta property="og:url" content="https://voxelport.github.io/guides/host-minecraft-server-android-phone" />
+    <meta property="og:title" content="Host a Minecraft Server on Your Android Phone (Free)" />
+    <meta property="og:description" content="Run a real Minecraft: Java server on your Android phone with the free VoxelPort app. Friends join from anywhere, no port forwarding, Java + Bedrock." />
+    <meta property="og:image" content="https://voxelport.github.io/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="VoxelPort — host any Minecraft server, your router stays shut" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Host a Minecraft Server on Your Android Phone (Free)" />
+    <meta name="twitter:description" content="Run a real Minecraft: Java server on your Android phone with the free VoxelPort app. Friends join from anywhere, no port forwarding, Java + Bedrock." />
+    <meta name="twitter:image" content="https://voxelport.github.io/og-image.png" />
+
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" type="image/png" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <link rel="preconnect" href="https://relay.voxelport.in" crossorigin />
+    <link rel="preload" href="/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts.css" />
+    <meta name="theme-color" content="#FAF9F5" />
+    <meta name="application-name" content="VoxelPort" />
+    <script type="module" crossorigin src="/assets/index-D5Ly27C9.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CIsFb_b7.css">
+      <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Host a Minecraft Server on Your Android Phone (Free)","description":"Run a real Minecraft: Java server on your Android phone with the free VoxelPort app. Friends join from anywhere, no port forwarding, Java + Bedrock.","url":"https://voxelport.github.io/guides/host-minecraft-server-android-phone","mainEntityOfPage":"https://voxelport.github.io/guides/host-minecraft-server-android-phone","image":"https://voxelport.github.io/og-image.png","datePublished":"2026-10-28","dateModified":"2026-10-28","inLanguage":"en","author":{"@type":"Organization","name":"VoxelPort","url":"https://voxelport.github.io/"},"publisher":{"@type":"Organization","name":"VoxelPort","url":"https://voxelport.github.io/","logo":{"@type":"ImageObject","url":"https://voxelport.github.io/logo.png"}}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"VoxelPort","item":"https://voxelport.github.io/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://voxelport.github.io/guides"},{"@type":"ListItem","position":3,"name":"Host from your phone","item":"https://voxelport.github.io/guides/host-minecraft-server-android-phone"}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can my Android phone really run a Minecraft server?","acceptedAnswer":{"@type":"Answer","text":"Yes. VoxelPort for Android runs a full Paper (Java Edition) server on the phone, with a real Java 25 runtime bundled in. A phone with 6–8 GB of RAM comfortably hosts a few friends."}},{"@type":"Question","name":"Do my friends need Android or the app?","acceptedAnswer":{"@type":"Answer","text":"No. You (the host) run the app; friends join with normal Minecraft on any device — PC, phone or console. Turn on Bedrock players and phone/console players can join too."}},{"@type":"Question","name":"Why is it an APK and not on the Play Store?","acceptedAnswer":{"@type":"Answer","text":"The app is distributed as a direct APK for now. A Play Store listing is planned. Sideloading is safe here — it’s the same open project as the desktop app."}},{"@type":"Question","name":"Will it drain my battery or data?","acceptedAnswer":{"@type":"Answer","text":"Hosting uses CPU and keeps the screen-off server awake, so keep the phone on a charger for long sessions. Every player’s traffic goes through your connection, so Wi‑Fi is best. On mobile data the app counts what it uses, warns you before big downloads, stops sharing at a daily limit you choose (500 MB by default), and has a Data saver mode that sends each player less."}},{"@type":"Question","name":"How much mobile data does hosting use?","acceptedAnswer":{"@type":"Answer","text":"Roughly 10–50 MB per hour for each player online while they build or mine, and a lot more while they explore new land or fly, because new world has to be sent to them. Setting up the server downloads about 110 MB once. On a 1 GB-per-day plan that is a few players for a few hours, so host on Wi‑Fi when you can. The app shows what it used today and stops sharing at your limit."}},{"@type":"Question","name":"Can friends without a paid Minecraft account join?","acceptedAnswer":{"@type":"Answer","text":"Yes, if you turn on \"Allow cracked players\" in the app (it sets online-mode to false). The trade-off is security: with the account check off, anyone can join under any name, including an admin’s, so use the whitelist or the one-tap login plugin (AuthMe) the app offers. Switching also changes players’ IDs, so existing inventories and ops won’t carry over."}},{"@type":"Question","name":"Will it run well on my phone?","acceptedAnswer":{"@type":"Answer","text":"The app checks your phone and picks a performance level (Low-end, Balanced or High-end) that sets the view distance, mob limits, memory use and background threads to suit it. A phone with 4 GB of RAM can host a few friends on Low-end; 8 GB or more runs comfortably. You can change the level in Settings."}},{"@type":"Question","name":"Does it work on Jio/Airtel or mobile data?","acceptedAnswer":{"@type":"Answer","text":"Yes, there’s no port forwarding and CGNAT (Jio, Airtel, mobile data) is not a problem. But mobile data is the weakest way to host: the connection can drop for a moment, and players get disconnected when it does. Wi‑Fi is much steadier."}}]}</script>
+  </head>
+  <body>
+    <div id="root"><main class="prerender"><p><a href="/">Home</a> / <a href="/guides">Guides</a> / Host from your phone</p><h1>Host a Minecraft Server on Your Android Phone (Free)</h1><p>Run a real Minecraft: Java server on your Android phone with the free VoxelPort app. Friends join from anywhere, no port forwarding, Java + Bedrock.</p>
+<p>Your Android phone is a small Linux computer with several gigabytes of RAM — plenty to host a Minecraft server for a few friends. VoxelPort for Android runs a real Paper (Java Edition) server right on the phone and puts it online through the VoxelPort relay, so friends join from anywhere without port forwarding.</p>
+
+<div class="tip"><b>A phone is not a PC.</b> Android can close apps in the background, and mobile data or a phone with little RAM is the hardest way to host. Use Wi‑Fi, keep the app open, and use the <a href="/download">PC app</a> for a server that has to stay up. It is shared as a direct APK (not on the Play Store yet) and needs an arm64 phone on Android 8 or newer.</div>
+
+<h2 id="install">Install the app</h2>
+<ol>
+  <li>On your phone, <a href="/dl/voxelport-android.apk" download><b>download the VoxelPort APK</b></a> (about 55 MB).</li>
+  <li>Open the downloaded <code>VoxelPort.apk</code>. Android will ask to <b>allow installing from this source</b> — turn it on for your browser, then tap <b>Install</b>.</li>
+  <li>If Play Protect warns about an unknown app, or says it “may be harmful” because it isn’t from the Play Store, tap <b>More details → Install anyway</b>. It’s the same open-source project as the desktop app.</li>
+</ol>
+
+<h2 id="host">Start a server</h2>
+<ol>
+  <li>Open VoxelPort. It first asks you to <b>Continue with Discord</b>: sign in, and join the VoxelPort Discord server if you aren’t in it yet (the app shows the invite). Then allow the notification it asks for.</li>
+  <li>Under <b>Server</b>: tick <b>I agree to the Minecraft EULA</b>, leave <b>Bedrock players</b> on if you want phone/console friends to join, and pick the RAM to give it (2 GB is a safe start).</li>
+  <li>Tap <b>Install</b> — it downloads the server (about 135 MB; Java is already inside the app), so <b>use Wi‑Fi</b>. On mobile data the app asks before it starts. Then tap <b>Start</b>. The first start generates the world and can take a few minutes; watch the console for <code>Done!</code>.</li>
+</ol>
+
+<h2 id="public">Let friends join</h2>
+<ol>
+  <li>Tap <b>Make Public</b>. Allow it to ignore battery optimisation, so Android doesn’t kill the server in the background.</li>
+  <li>Copy the address it shows (like <code>play.voxelport.in:26137</code>); supporters can also claim a custom <code>yourname.voxelport.in</code>.</li>
+  <li>Share it. Friends open <b>Multiplayer → Add Server</b> and paste it. Bedrock (phone/console) players use the same address.</li>
+</ol>
+
+<h2 id="backup">Keep your address on a new phone or PC</h2>
+<p>Your public address belongs to a secret key stored on this phone. To keep it if you reinstall or switch devices, open the <b>Address backup</b> panel, tap <b>Back up my address</b> and choose a passphrase of at least 12 characters. The app saves a locked copy to your Discord account; VoxelPort can’t read it and can’t recover a forgotten passphrase. On the new phone (or in the PC app, which uses the same backup), sign in with Discord and tap <b>Restore my address</b>.</p>
+<div class="tip"><b>Updating from an older build?</b> Android can’t update the earliest builds in place, because the app’s signing key changed. Open <b>Back up or restore your address</b> first and copy your code, then uninstall, install the new APK and restore the code. Uninstalling deletes the server files stored inside the app, so copy out anything you want to keep. Updates from now on install normally.</div>
+<p>To remove a server you no longer want, stop it and tap <b>Delete server</b> under <b>Setup</b>. Your backups, address and Discord sign-in are kept.</p>
+
+<h2 id="addons">Add plugins and mods in one tap</h2>
+<p>Tap <b>Add plugins</b> to browse <a href="https://modrinth.com">Modrinth</a> from inside the app: search, tap <b>Install</b>, and the plugin (plus anything it needs) goes straight into your server. Restart to load it. Want mods instead? Under <b>Version → Change</b>, switch the server software from <b>Paper</b> (plugins) to <b>Fabric</b> (mods) and the same button browses Fabric mods. <b>Settings</b> changes the game mode, difficulty, max players, whitelist and more, and <b>Files</b> lets you browse the server folder or import your own jars.</p>
+
+<h2 id="cracked">Friends without a Minecraft account (cracked)</h2>
+<p>Under <b>Player accounts</b>, switch on <b>Allow cracked players</b> and restart. This turns off Minecraft’s account check, so people without a paid account can join. The catch: anyone can then join under <i>any</i> name, even yours. Turn on the whitelist in Settings, or tap <b>Add login protection</b> to install AuthMe, so players have to <code>/register</code> and <code>/login</code>. Switching the mode changes every player’s ID, so inventories, ops and whitelist entries from before won’t match.</p>
+
+<h2 id="performance">Made for phones</h2>
+<p>VoxelPort checks your phone’s memory and cores and picks a <b>Performance</b> level (Settings): <b>Low-end</b> for 4 GB phones, <b>Balanced</b> for most, <b>High-end</b> for 10 GB+. It sets view distance, mob limits, the garbage collector and background threads, suggests a safe amount of RAM, and warns you if the phone is hot or the battery is low. The app also stops polling when it’s in the background to save battery.</p>
+
+<h2 id="data">Don’t burn through your mobile data</h2>
+<p>When friends play on your server, their game travels through your phone’s connection. On Wi‑Fi that costs nothing; on a mobile plan (say 1 GB a day) it adds up, so the app looks after it for you:</p>
+<ul>
+  <li><b>Wi‑Fi is recommended.</b> A yellow card tells you when you’re on mobile data, with a shortcut to your Wi‑Fi settings, and <b>Make Public</b> asks first.</li>
+  <li><b>It counts what it uses.</b> The <b>Data use</b> panel shows today’s mobile and Wi‑Fi use. The numbers are an estimate; Android’s own <i>App data usage</i> screen has the exact figure.</li>
+  <li><b>A daily limit.</b> Choose <b>Wi‑Fi only</b>, 250 MB, 500 MB (the default), 1 GB, 2 GB or no limit. Near the limit you get a notification; at the limit the app stops sharing (the server keeps running on your phone) until you’re on Wi‑Fi or add more for the day.</li>
+  <li><b>Data saver.</b> Gives each player a smaller world around them and fewer far-away updates, so each one uses much less data. Turn it on in <b>Data use</b>, then restart the server.</li>
+  <li><b>Big downloads ask first.</b> Setting up the server (about 110 MB), app updates (about 50 MB) and large plugins or mods ask before using mobile data. Plugin pictures are hidden on mobile data too.</li>
+</ul>
+<p>As a rough guide, each player online uses about 10–50 MB an hour, and much more while exploring new land. If you only have a small daily allowance, host on Wi‑Fi, use Data saver, and keep the player count low.</p>
+
+<h2 id="tips">Keep it running smoothly</h2>
+<ul>
+  <li><b>Keep the phone charged.</b> Hosting is steady CPU work; plug it in for long sessions.</li>
+  <li><b>Wi‑Fi beats mobile data.</b> Every player’s traffic flows through your connection. On mobile data, keep an eye on the <b>Data use</b> panel.</li>
+  <li><b>Don’t force-close the app.</b> The server runs in a foreground service with a notification; leave it there while you play.</li>
+  <li><b>Use the console.</b> Make yourself admin with <code>op YourName</code>, or whitelist friends with <code>whitelist on</code> then <code>whitelist add Name</code>.</li>
+</ul>
+
+<p>Want a PC server instead? See <a href="/guides/how-to-make-a-minecraft-server">how to make a Minecraft server</a>, or the <a href="/guides/free-minecraft-server-hosting">free hosting comparison</a>.</p><h2>Questions</h2><h3>Can my Android phone really run a Minecraft server?</h3><p>Yes. VoxelPort for Android runs a full Paper (Java Edition) server on the phone, with a real Java 25 runtime bundled in. A phone with 6–8 GB of RAM comfortably hosts a few friends.</p><h3>Do my friends need Android or the app?</h3><p>No. You (the host) run the app; friends join with normal Minecraft on any device — PC, phone or console. Turn on Bedrock players and phone/console players can join too.</p><h3>Why is it an APK and not on the Play Store?</h3><p>The app is distributed as a direct APK for now. A Play Store listing is planned. Sideloading is safe here — it’s the same open project as the desktop app.</p><h3>Will it drain my battery or data?</h3><p>Hosting uses CPU and keeps the screen-off server awake, so keep the phone on a charger for long sessions. Every player’s traffic goes through your connection, so Wi‑Fi is best. On mobile data the app counts what it uses, warns you before big downloads, stops sharing at a daily limit you choose (500 MB by default), and has a Data saver mode that sends each player less.</p><h3>How much mobile data does hosting use?</h3><p>Roughly 10–50 MB per hour for each player online while they build or mine, and a lot more while they explore new land or fly, because new world has to be sent to them. Setting up the server downloads about 110 MB once. On a 1 GB-per-day plan that is a few players for a few hours, so host on Wi‑Fi when you can. The app shows what it used today and stops sharing at your limit.</p><h3>Can friends without a paid Minecraft account join?</h3><p>Yes, if you turn on &quot;Allow cracked players&quot; in the app (it sets online-mode to false). The trade-off is security: with the account check off, anyone can join under any name, including an admin’s, so use the whitelist or the one-tap login plugin (AuthMe) the app offers. Switching also changes players’ IDs, so existing inventories and ops won’t carry over.</p><h3>Will it run well on my phone?</h3><p>The app checks your phone and picks a performance level (Low-end, Balanced or High-end) that sets the view distance, mob limits, memory use and background threads to suit it. A phone with 4 GB of RAM can host a few friends on Low-end; 8 GB or more runs comfortably. You can change the level in Settings.</p><h3>Does it work on Jio/Airtel or mobile data?</h3><p>Yes, there’s no port forwarding and CGNAT (Jio, Airtel, mobile data) is not a problem. But mobile data is the weakest way to host: the connection can drop for a moment, and players get disconnected when it does. Wi‑Fi is much steadier.</p><h2>More guides</h2><ul><li><a href="/guides/free-minecraft-server-hosting">Free Minecraft Server Hosting: No Sleep, No Queue (2026)</a></li><li><a href="/guides/free-minecraft-hosting-india">Free Minecraft Server Hosting in India (2026)</a></li><li><a href="/guides/how-to-make-a-minecraft-server">How to Make a Minecraft Server for Free (Java + Bedrock)</a></li><li><a href="/guides/minecraft-server-kaise-banaye">Minecraft Server Kaise Banaye: Free, Bina Port Forwarding</a></li><li><a href="/guides/playit-gg-ngrok-hamachi-alternative">playit.gg, ngrok and Hamachi Alternative for Minecraft</a></li><li><a href="/guides/host-minecraft-server-jio-airtel">Host a Minecraft Server on Jio or Airtel, No Port Forwarding</a></li><li><a href="/guides/minecraft-server-without-port-forwarding">Host a Minecraft Server Without Port Forwarding (Free)</a></li><li><a href="/guides/play-minecraft-with-friends-different-wifi">Play Minecraft With Friends on Different Wi-Fi</a></li><li><a href="/guides/minecraft-java-bedrock-crossplay-server">Minecraft Java + Bedrock Crossplay Server (Free, 2026)</a></li><li><a href="/guides/free-minecraft-server-address">Free Minecraft Server Address (Custom for Supporters)</a></li><li><a href="/guides/minecraft-server-crash-fixes">Minecraft Server Crashing? Common Errors and Fixes</a></li><li><a href="/guides/minecraft-server-school-college-friends">Minecraft Server for School or College Friends (Free)</a></li><li><a href="/guides/play-minecraft-modpack-with-friends-free">Play a Minecraft Modpack With Friends for Free</a></li><li><a href="/guides/aternos-alternative-no-queue">Free Aternos Alternative With No Queue (Minecraft)</a></li><li><a href="/guides/minecraft-bedrock-server-phone-players">Minecraft Server Your Friends Can Join From Phones</a></li><li><a href="/guides/free-minecraft-server-hosting-europe">Free Minecraft Server Hosting in Europe (Low Ping)</a></li><li><a href="/guides/minecraft-server-dslite-cgnat-europe">Minecraft Server Behind DS-Lite or CGNAT: Host It Anyway</a></li><li><a href="/guides/minecraft-server-ohne-portfreigabe-kostenlos">Minecraft Server ohne Portfreigabe hosten (kostenlos)</a></li></ul><nav><a href="/">Home</a> · <a href="/new-app">The new VoxelPort (move in one minute)</a> · <a href="/features">Features</a> · <a href="/compare">Compare</a> · <a href="/faq">FAQ</a> · <a href="/download">Download</a> · <a href="/guides">Guides</a> · <a href="/servers">Server list</a> · <a href="/status">Relay status</a> · <a href="/support">Support</a> · <a href="/community">Discord community</a> · <a href="/about">About the developer</a> · <a href="/team">Join the team</a> · <a href="https://discord.gg/JAUfmey2fP">Join the Discord</a> · <a href="/legal">Legal &amp; privacy</a> · <a href="https://github.com/VOXELPORT/VoxelPort-App/releases/download/v2.0.0-beta.2/VoxelPort-Setup.exe">Windows installer (direct, the new app 2.0 beta)</a> · <a href="https://github.com/VOXELPORT/VoxelPort-Android/releases/latest/download/VoxelPort.apk">Android APK</a> · <a href="https://www.instagram.com/voxelport.in/">Instagram</a></nav></main></div>
+  </body>
+</html>

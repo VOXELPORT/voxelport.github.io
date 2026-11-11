@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/theme-init.js"></script>
+    <!-- With JavaScript, the static text copy (.prerender) stays hidden until React replaces it, so it can't shift as fonts load. -->
+    <script>document.documentElement.classList.add('js')</script>
+    <!-- Page-specific tags below are rewritten for each route by scripts/prerender.mjs. -->
+    <title>Minecraft Server Crashing? Common Errors and Fixes</title>
+    <meta name="description" content="Fix common Minecraft server errors: out of memory, wrong Java version, port in use, failed to bind, mod conflicts. What each crash message means and the fix." />
+    <link rel="canonical" href="https://voxelport.github.io/guides/minecraft-server-crash-fixes" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="VoxelPort" />
+    <meta property="og:url" content="https://voxelport.github.io/guides/minecraft-server-crash-fixes" />
+    <meta property="og:title" content="Minecraft Server Crashing? Common Errors and Fixes" />
+    <meta property="og:description" content="Fix common Minecraft server errors: out of memory, wrong Java version, port in use, failed to bind, mod conflicts. What each crash message means and the fix." />
+    <meta property="og:image" content="https://voxelport.github.io/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="VoxelPort — host any Minecraft server, your router stays shut" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Minecraft Server Crashing? Common Errors and Fixes" />
+    <meta name="twitter:description" content="Fix common Minecraft server errors: out of memory, wrong Java version, port in use, failed to bind, mod conflicts. What each crash message means and the fix." />
+    <meta name="twitter:image" content="https://voxelport.github.io/og-image.png" />
+
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" type="image/png" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <link rel="preconnect" href="https://relay.voxelport.in" crossorigin />
+    <link rel="preload" href="/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts.css" />
+    <meta name="theme-color" content="#FAF9F5" />
+    <meta name="application-name" content="VoxelPort" />
+    <script type="module" crossorigin src="/assets/index-D5Ly27C9.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CIsFb_b7.css">
+      <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Minecraft Server Crashing? Common Errors and Fixes","description":"Fix common Minecraft server errors: out of memory, wrong Java version, port in use, failed to bind, mod conflicts. What each crash message means and the fix.","url":"https://voxelport.github.io/guides/minecraft-server-crash-fixes","mainEntityOfPage":"https://voxelport.github.io/guides/minecraft-server-crash-fixes","image":"https://voxelport.github.io/og-image.png","datePublished":"2026-10-28","dateModified":"2026-10-28","inLanguage":"en","author":{"@type":"Organization","name":"VoxelPort","url":"https://voxelport.github.io/"},"publisher":{"@type":"Organization","name":"VoxelPort","url":"https://voxelport.github.io/","logo":{"@type":"ImageObject","url":"https://voxelport.github.io/logo.png"}}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"VoxelPort","item":"https://voxelport.github.io/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://voxelport.github.io/guides"},{"@type":"ListItem","position":3,"name":"Fix server crashes","item":"https://voxelport.github.io/guides/minecraft-server-crash-fixes"}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Where do I find the crash reason?","acceptedAnswer":{"@type":"Answer","text":"Look at the last lines of the server console or the logs/latest.log file. Mod and plugin crashes also write a file in the crash-reports folder. VoxelPort reads the console for you and explains common causes in plain English."}},{"@type":"Question","name":"How much RAM should a Minecraft server have?","acceptedAnswer":{"@type":"Answer","text":"About 2–4 GB for a small vanilla or Paper server, and 6–10 GB for big modpacks. Leave at least 2–3 GB for Windows and anything else running on the PC."}},{"@type":"Question","name":"Which Java version does my server need?","acceptedAnswer":{"@type":"Answer","text":"Minecraft 26.1 and newer need Java 25. Minecraft 1.20.5 to 1.21.x need Java 21, and 1.18 to 1.20.4 need Java 17."}}]}</script>
+  </head>
+  <body>
+    <div id="root"><main class="prerender"><p><a href="/">Home</a> / <a href="/guides">Guides</a> / Fix server crashes</p><h1>Minecraft Server Crashing? Common Errors and Fixes</h1><p>Fix common Minecraft server errors: out of memory, wrong Java version, port in use, failed to bind, mod conflicts. What each crash message means and the fix.</p>
+<p>When a Minecraft server stops, the reason is almost always in the last 20 lines of the console. Find the message below that matches yours. VoxelPort recognises most of these automatically and shows the explanation and a fix button when your server stops.</p>
+
+<h2 id="port">“FAILED TO BIND TO PORT” / “Address already in use”</h2>
+<p><b>Meaning:</b> another program is already using the server’s port, usually another Minecraft server that’s still running.</p>
+<p><b>Fix:</b> close the other server (check Task Manager for <code>java.exe</code>), or change <code>server-port</code> in <code>server.properties</code> (in VoxelPort: the server’s <b>Settings</b>).</p>
+
+<h2 id="heap">“Could not reserve enough space for object heap”</h2>
+<p><b>Meaning:</b> the server is set to use more RAM than Java can get. It’s common with 32-bit Java or when the RAM setting is higher than the free memory on your PC.</p>
+<p><b>Fix:</b> lower the RAM (the <code>-Xmx</code> value), and make sure you use 64-bit Java.</p>
+
+<h2 id="oom">“java.lang.OutOfMemoryError”</h2>
+<p><b>Meaning:</b> the server ran out of the RAM it was given, from too many players, chunks or mods.</p>
+<p><b>Fix:</b> give it more RAM, lower <code>view-distance</code> and <code>simulation-distance</code>, or remove heavy mods.</p>
+
+<h2 id="java-version">“UnsupportedClassVersionError … class file version 69.0”</h2>
+<p><b>Meaning:</b> the server needs a newer Java than the one running it. Class file version 61 means Java 17, 65 means Java 21, and 69 means Java 25.</p>
+<p><b>Fix:</b> install the right Java (Java 25 for Minecraft 26.1+, Java 21 for 1.20.5–1.21.x) and start the server with it. VoxelPort picks and installs the right Java automatically.</p>
+
+<h2 id="eula">“You need to agree to the EULA in order to run the server”</h2>
+<p><b>Meaning:</b> every server must accept Mojang’s EULA once.</p>
+<p><b>Fix:</b> open <code>eula.txt</code> in the server folder and change <code>eula=false</code> to <code>eula=true</code>, after reading the EULA at minecraft.net/eula.</p>
+
+<h2 id="mods">Mod errors: wrong version, missing dependency, Mixin failures</h2>
+<ul>
+  <li><b>“requires minecraft … but only the wrong version is present”:</b> a mod is made for another Minecraft version. Download the right version of that mod, or remove it.</li>
+  <li><b>“requires … which is missing”:</b> a mod needs another mod. Most Fabric mods need <b>Fabric API</b>; the error names what’s missing.</li>
+  <li><b>“Mixin apply failed”:</b> a mod is incompatible with this Minecraft version or with another mod. Update it, or remove recently added mods one at a time.</li>
+</ul>
+
+<h2 id="plugins">“Could not load 'plugins/…'” / “Error occurred while enabling”</h2>
+<p><b>Meaning:</b> a Paper/Spigot plugin failed, usually because it’s built for a different Minecraft version.</p>
+<p><b>Fix:</b> update the plugin, or move it out of the <code>plugins</code> folder to confirm it’s the cause.</p>
+
+<h2 id="jar">“Invalid or corrupt jarfile” / “Unable to access jarfile”</h2>
+<p><b>Meaning:</b> <code>server.jar</code> is missing, renamed or only partly downloaded.</p>
+<p><b>Fix:</b> download the server jar again and make sure the start command uses the right file name.</p>
+
+<h2 id="lock">“session.lock” / “The directory is already locked”</h2>
+<p><b>Meaning:</b> another Minecraft process has the world open.</p>
+<p><b>Fix:</b> close the other server or game using that world (end <code>java.exe</code> in Task Manager), then start again.</p>
+
+<h2 id="permission">“AccessDeniedException” / “Access is denied”</h2>
+<p><b>Meaning:</b> the server can’t write to its folder. It happens with read-only folders and folders synced by OneDrive.</p>
+<p><b>Fix:</b> move the server to a normal folder such as Documents (outside OneDrive), and don’t run it from a ZIP file or a protected location like Program Files.</p>
+
+<h2 id="lag">The server doesn’t crash but lags</h2>
+<p>Check the server’s TPS (ticks per second). 20 is perfect; below about 15 players will notice. Lower the view distance, limit farms with many entities, and use Paper instead of Vanilla for better performance. VoxelPort shows CPU, RAM and TPS live while the server runs.</p><h2>Questions</h2><h3>Where do I find the crash reason?</h3><p>Look at the last lines of the server console or the logs/latest.log file. Mod and plugin crashes also write a file in the crash-reports folder. VoxelPort reads the console for you and explains common causes in plain English.</p><h3>How much RAM should a Minecraft server have?</h3><p>About 2–4 GB for a small vanilla or Paper server, and 6–10 GB for big modpacks. Leave at least 2–3 GB for Windows and anything else running on the PC.</p><h3>Which Java version does my server need?</h3><p>Minecraft 26.1 and newer need Java 25. Minecraft 1.20.5 to 1.21.x need Java 21, and 1.18 to 1.20.4 need Java 17.</p><h2>More guides</h2><ul><li><a href="/guides/host-minecraft-server-android-phone">Host a Minecraft Server on Your Android Phone (Free)</a></li><li><a href="/guides/free-minecraft-server-hosting">Free Minecraft Server Hosting: No Sleep, No Queue (2026)</a></li><li><a href="/guides/free-minecraft-hosting-india">Free Minecraft Server Hosting in India (2026)</a></li><li><a href="/guides/how-to-make-a-minecraft-server">How to Make a Minecraft Server for Free (Java + Bedrock)</a></li><li><a href="/guides/minecraft-server-kaise-banaye">Minecraft Server Kaise Banaye: Free, Bina Port Forwarding</a></li><li><a href="/guides/playit-gg-ngrok-hamachi-alternative">playit.gg, ngrok and Hamachi Alternative for Minecraft</a></li><li><a href="/guides/host-minecraft-server-jio-airtel">Host a Minecraft Server on Jio or Airtel, No Port Forwarding</a></li><li><a href="/guides/minecraft-server-without-port-forwarding">Host a Minecraft Server Without Port Forwarding (Free)</a></li><li><a href="/guides/play-minecraft-with-friends-different-wifi">Play Minecraft With Friends on Different Wi-Fi</a></li><li><a href="/guides/minecraft-java-bedrock-crossplay-server">Minecraft Java + Bedrock Crossplay Server (Free, 2026)</a></li><li><a href="/guides/free-minecraft-server-address">Free Minecraft Server Address (Custom for Supporters)</a></li><li><a href="/guides/minecraft-server-school-college-friends">Minecraft Server for School or College Friends (Free)</a></li><li><a href="/guides/play-minecraft-modpack-with-friends-free">Play a Minecraft Modpack With Friends for Free</a></li><li><a href="/guides/aternos-alternative-no-queue">Free Aternos Alternative With No Queue (Minecraft)</a></li><li><a href="/guides/minecraft-bedrock-server-phone-players">Minecraft Server Your Friends Can Join From Phones</a></li><li><a href="/guides/free-minecraft-server-hosting-europe">Free Minecraft Server Hosting in Europe (Low Ping)</a></li><li><a href="/guides/minecraft-server-dslite-cgnat-europe">Minecraft Server Behind DS-Lite or CGNAT: Host It Anyway</a></li><li><a href="/guides/minecraft-server-ohne-portfreigabe-kostenlos">Minecraft Server ohne Portfreigabe hosten (kostenlos)</a></li></ul><nav><a href="/">Home</a> · <a href="/new-app">The new VoxelPort (move in one minute)</a> · <a href="/features">Features</a> · <a href="/compare">Compare</a> · <a href="/faq">FAQ</a> · <a href="/download">Download</a> · <a href="/guides">Guides</a> · <a href="/servers">Server list</a> · <a href="/status">Relay status</a> · <a href="/support">Support</a> · <a href="/community">Discord community</a> · <a href="/about">About the developer</a> · <a href="/team">Join the team</a> · <a href="https://discord.gg/JAUfmey2fP">Join the Discord</a> · <a href="/legal">Legal &amp; privacy</a> · <a href="https://github.com/VOXELPORT/VoxelPort-App/releases/download/v2.0.0-beta.2/VoxelPort-Setup.exe">Windows installer (direct, the new app 2.0 beta)</a> · <a href="https://github.com/VOXELPORT/VoxelPort-Android/releases/latest/download/VoxelPort.apk">Android APK</a> · <a href="https://www.instagram.com/voxelport.in/">Instagram</a></nav></main></div>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/theme-init.js"></script>
+    <!-- With JavaScript, the static text copy (.prerender) stays hidden until React replaces it, so it can't shift as fonts load. -->
+    <script>document.documentElement.classList.add('js')</script>
+    <!-- Page-specific tags below are rewritten for each route by scripts/prerender.mjs. -->
+    <title>Play a Minecraft Modpack With Friends for Free</title>
+    <meta name="description" content="Host a Minecraft modpack server for free and play with friends: import your server folder, put it online with VoxelPort. No port forwarding or paid hosting." />
+    <link rel="canonical" href="https://voxelport.github.io/guides/play-minecraft-modpack-with-friends-free" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="VoxelPort" />
+    <meta property="og:url" content="https://voxelport.github.io/guides/play-minecraft-modpack-with-friends-free" />
+    <meta property="og:title" content="Play a Minecraft Modpack With Friends for Free" />
+    <meta property="og:description" content="Host a Minecraft modpack server for free and play with friends: import your server folder, put it online with VoxelPort. No port forwarding or paid hosting." />
+    <meta property="og:image" content="https://voxelport.github.io/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="VoxelPort — host any Minecraft server, your router stays shut" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Play a Minecraft Modpack With Friends for Free" />
+    <meta name="twitter:description" content="Host a Minecraft modpack server for free and play with friends: import your server folder, put it online with VoxelPort. No port forwarding or paid hosting." />
+    <meta name="twitter:image" content="https://voxelport.github.io/og-image.png" />
+
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" type="image/png" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <link rel="preconnect" href="https://relay.voxelport.in" crossorigin />
+    <link rel="preload" href="/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts.css" />
+    <meta name="theme-color" content="#FAF9F5" />
+    <meta name="application-name" content="VoxelPort" />
+    <script type="module" crossorigin src="/assets/index-D5Ly27C9.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CIsFb_b7.css">
+      <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Play a Minecraft Modpack With Friends for Free","description":"Host a Minecraft modpack server for free and play with friends: import your server folder, put it online with VoxelPort. No port forwarding or paid hosting.","url":"https://voxelport.github.io/guides/play-minecraft-modpack-with-friends-free","mainEntityOfPage":"https://voxelport.github.io/guides/play-minecraft-modpack-with-friends-free","image":"https://voxelport.github.io/og-image.png","datePublished":"2026-10-28","dateModified":"2026-10-28","inLanguage":"en","author":{"@type":"Organization","name":"VoxelPort","url":"https://voxelport.github.io/"},"publisher":{"@type":"Organization","name":"VoxelPort","url":"https://voxelport.github.io/","logo":{"@type":"ImageObject","url":"https://voxelport.github.io/logo.png"}}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"VoxelPort","item":"https://voxelport.github.io/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://voxelport.github.io/guides"},{"@type":"ListItem","position":3,"name":"Modpacks with friends","item":"https://voxelport.github.io/guides/play-minecraft-modpack-with-friends-free"}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do my friends need the modpack installed?","acceptedAnswer":{"@type":"Answer","text":"Yes. Everyone joining a modded server needs the same modpack, at the same version, installed through the CurseForge app, the Modrinth app or a launcher such as Prism Launcher."}},{"@type":"Question","name":"How much RAM does a modpack server need?","acceptedAnswer":{"@type":"Answer","text":"Light packs run on 4–6 GB. Big kitchen-sink packs (All the Mods, large tech packs) need 8–10 GB for the server alone, so the host PC needs 16 GB or more in total."}},{"@type":"Question","name":"Can Bedrock players join a modpack server?","acceptedAnswer":{"@type":"Answer","text":"Usually not. Bedrock players can’t load Java mods, so modpacks are Java-only."}},{"@type":"Question","name":"Where do I get the server files for a modpack?","acceptedAnswer":{"@type":"Answer","text":"On the modpack’s CurseForge page, open Files and download the Server Pack. On Modrinth, many packs offer a server pack too; otherwise you can put the pack’s mods on a Fabric server yourself."}}]}</script>
+  </head>
+  <body>
+    <div id="root"><main class="prerender"><p><a href="/">Home</a> / <a href="/guides">Guides</a> / Modpacks with friends</p><h1>Play a Minecraft Modpack With Friends for Free</h1><p>Host a Minecraft modpack server for free and play with friends: import your server folder, put it online with VoxelPort. No port forwarding or paid hosting.</p>
+<p>Modpacks are more fun with friends, but modpack hosting costs money and free hosts often don’t have enough RAM for big packs. If you have a decent PC, you can host the pack yourself for free. Your friends only need the same modpack installed.</p>
+
+<h2 id="before">Before you start</h2>
+<ul>
+  <li><b>RAM:</b> the server needs its own memory, on top of your game if you play on the same PC. See the table below.</li>
+  <li><b>Same version for everyone:</b> the server and every player must use exactly the same modpack version.</li>
+  <li><b>Java version:</b> modpacks for Minecraft 1.20.5–1.21.x need Java 21; newer ones need Java 25; older ones (1.18–1.20.4) need Java 17.</li>
+</ul>
+<table>
+  <thead><tr><th>Modpack size</th><th>Server RAM</th><th>Host PC total RAM</th></tr></thead>
+  <tbody>
+    <tr><td>Light (under 100 mods)</td><td>4–6 GB</td><td>12 GB or more</td></tr>
+    <tr><td>Medium (100–250 mods)</td><td>6–8 GB</td><td>16 GB or more</td></tr>
+    <tr><td>Heavy (250+ mods, e.g. All the Mods)</td><td>8–10 GB</td><td>16–32 GB</td></tr>
+  </tbody>
+</table>
+
+<h2 id="server-pack">Step 1: get the modpack’s server files</h2>
+<ol>
+  <li>Open the modpack’s page on <b>CurseForge</b> or <b>Modrinth</b> and go to <b>Files</b> or <b>Versions</b>.</li>
+  <li>Download the <b>Server Pack</b> (sometimes called “Server Files”) for the same version your friends will play.</li>
+  <li>Unzip it into a normal folder such as <code>Documents\MyPackServer</code> (not inside OneDrive, and not in Downloads).</li>
+  <li>Run the pack’s start file: usually <code>start.bat</code>, <code>run.bat</code> or <code>startserver.bat</code>. The first run downloads the mod loader (Forge, NeoForge or Fabric) and can take a few minutes.</li>
+  <li>If it stops and asks you to accept the EULA, open <code>eula.txt</code>, change it to <code>eula=true</code>, and run the start file again.</li>
+  <li>To give it more RAM, edit <code>user_jvm_args.txt</code> (Forge and NeoForge) or the <code>-Xmx</code> value in the start file, for example <code>-Xmx8G</code>.</li>
+</ol>
+<p>Wait until the console says <code>Done</code>. The server is now running on your PC, on port 25565.</p>
+
+<h2 id="online">Step 2: put it online for friends</h2>
+<p>Download the <a href="https://github.com/VOXELPORT/VoxelPort-App/releases/download/v2.0.0-beta.2/VoxelPort-Setup.exe">Windows installer</a> (the new app, 2.0 beta; Windows 10 and 11; if Windows warns, click More info → Run anyway; if Windows 11 Smart App Control blocks it, see <a href="/download">the download page</a>). It's free and open source; to host, join our Discord server once.</p>
+<ol>
+  <li>In VoxelPort, click <b>Tunnel a server I already run elsewhere</b>.</li>
+  <li>Enter the port (<code>25565</code> unless you changed <code>server-port</code>) and click <b>Start hosting</b>.</li>
+  <li>Copy the address it shows, or, as a supporter, claim a name such as <code>ourpack.voxelport.in</code>.</li>
+  <li>Friends launch the same modpack, go to <b>Multiplayer → Add Server</b>, and paste the address.</li>
+</ol>
+<div class="tip"><b>Making your own pack instead?</b> For a small Fabric pack, use VoxelPort’s <b>Modded (Fabric)</b> template, then drop mods into its <code>mods</code> folder and give friends the same mods. Client-only mods (shaders, minimaps, Sodium) stay on players’ PCs, not on the server.</div>
+
+<h2 id="friends">How friends install the modpack</h2>
+<ul>
+  <li><b>CurseForge app:</b> search for the modpack, install the same version as the server, and press Play.</li>
+  <li><b>Modrinth app or Prism Launcher:</b> same idea; pick the matching version.</li>
+  <li>Give the pack at least 4–6 GB of RAM in the launcher settings, or it may freeze while loading.</li>
+</ul>
+
+<h2 id="errors">Common modpack errors</h2>
+<table>
+  <thead><tr><th>Error</th><th>Fix</th></tr></thead>
+  <tbody>
+    <tr><td>“Mod rejections” or “Mismatched mod channel list”</td><td>A friend has a different modpack version or extra mods. Everyone installs exactly the server’s version.</td></tr>
+    <tr><td>“Connection timed out” while joining</td><td>Big packs take a while to start. Wait for <code>Done</code> in the server console and try again.</td></tr>
+    <tr><td>Server closes with OutOfMemoryError</td><td>Give the server more RAM in <code>user_jvm_args.txt</code>.</td></tr>
+    <tr><td>“UnsupportedClassVersionError”</td><td>Wrong Java version. See <a href="/guides/minecraft-server-crash-fixes">the crash fixes guide</a>.</td></tr>
+    <tr><td>Server crashes on start after you added a mod</td><td>It’s probably client-only. Remove shaders, minimaps and similar mods from the server’s <code>mods</code> folder.</td></tr>
+  </tbody>
+</table><h2>Questions</h2><h3>Do my friends need the modpack installed?</h3><p>Yes. Everyone joining a modded server needs the same modpack, at the same version, installed through the CurseForge app, the Modrinth app or a launcher such as Prism Launcher.</p><h3>How much RAM does a modpack server need?</h3><p>Light packs run on 4–6 GB. Big kitchen-sink packs (All the Mods, large tech packs) need 8–10 GB for the server alone, so the host PC needs 16 GB or more in total.</p><h3>Can Bedrock players join a modpack server?</h3><p>Usually not. Bedrock players can’t load Java mods, so modpacks are Java-only.</p><h3>Where do I get the server files for a modpack?</h3><p>On the modpack’s CurseForge page, open Files and download the Server Pack. On Modrinth, many packs offer a server pack too; otherwise you can put the pack’s mods on a Fabric server yourself.</p><h2>More guides</h2><ul><li><a href="/guides/host-minecraft-server-android-phone">Host a Minecraft Server on Your Android Phone (Free)</a></li><li><a href="/guides/free-minecraft-server-hosting">Free Minecraft Server Hosting: No Sleep, No Queue (2026)</a></li><li><a href="/guides/free-minecraft-hosting-india">Free Minecraft Server Hosting in India (2026)</a></li><li><a href="/guides/how-to-make-a-minecraft-server">How to Make a Minecraft Server for Free (Java + Bedrock)</a></li><li><a href="/guides/minecraft-server-kaise-banaye">Minecraft Server Kaise Banaye: Free, Bina Port Forwarding</a></li><li><a href="/guides/playit-gg-ngrok-hamachi-alternative">playit.gg, ngrok and Hamachi Alternative for Minecraft</a></li><li><a href="/guides/host-minecraft-server-jio-airtel">Host a Minecraft Server on Jio or Airtel, No Port Forwarding</a></li><li><a href="/guides/minecraft-server-without-port-forwarding">Host a Minecraft Server Without Port Forwarding (Free)</a></li><li><a href="/guides/play-minecraft-with-friends-different-wifi">Play Minecraft With Friends on Different Wi-Fi</a></li><li><a href="/guides/minecraft-java-bedrock-crossplay-server">Minecraft Java + Bedrock Crossplay Server (Free, 2026)</a></li><li><a href="/guides/free-minecraft-server-address">Free Minecraft Server Address (Custom for Supporters)</a></li><li><a href="/guides/minecraft-server-crash-fixes">Minecraft Server Crashing? Common Errors and Fixes</a></li><li><a href="/guides/minecraft-server-school-college-friends">Minecraft Server for School or College Friends (Free)</a></li><li><a href="/guides/aternos-alternative-no-queue">Free Aternos Alternative With No Queue (Minecraft)</a></li><li><a href="/guides/minecraft-bedrock-server-phone-players">Minecraft Server Your Friends Can Join From Phones</a></li><li><a href="/guides/free-minecraft-server-hosting-europe">Free Minecraft Server Hosting in Europe (Low Ping)</a></li><li><a href="/guides/minecraft-server-dslite-cgnat-europe">Minecraft Server Behind DS-Lite or CGNAT: Host It Anyway</a></li><li><a href="/guides/minecraft-server-ohne-portfreigabe-kostenlos">Minecraft Server ohne Portfreigabe hosten (kostenlos)</a></li></ul><nav><a href="/">Home</a> · <a href="/new-app">The new VoxelPort (move in one minute)</a> · <a href="/features">Features</a> · <a href="/compare">Compare</a> · <a href="/faq">FAQ</a> · <a href="/download">Download</a> · <a href="/guides">Guides</a> · <a href="/servers">Server list</a> · <a href="/status">Relay status</a> · <a href="/support">Support</a> · <a href="/community">Discord community</a> · <a href="/about">About the developer</a> · <a href="/team">Join the team</a> · <a href="https://discord.gg/JAUfmey2fP">Join the Discord</a> · <a href="/legal">Legal &amp; privacy</a> · <a href="https://github.com/VOXELPORT/VoxelPort-App/releases/download/v2.0.0-beta.2/VoxelPort-Setup.exe">Windows installer (direct, the new app 2.0 beta)</a> · <a href="https://github.com/VOXELPORT/VoxelPort-Android/releases/latest/download/VoxelPort.apk">Android APK</a> · <a href="https://www.instagram.com/voxelport.in/">Instagram</a></nav></main></div>
+  </body>
+</html>

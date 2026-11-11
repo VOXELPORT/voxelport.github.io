@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/theme-init.js"></script>
+    <!-- With JavaScript, the static text copy (.prerender) stays hidden until React replaces it, so it can't shift as fonts load. -->
+    <script>document.documentElement.classList.add('js')</script>
+    <!-- Page-specific tags below are rewritten for each route by scripts/prerender.mjs. -->
+    <title>Host a Minecraft Server on Jio or Airtel, No Port Forwarding</title>
+    <meta name="description" content="Jio and Airtel use CGNAT, so port forwarding fails. Here is how to host a Minecraft server on them anyway with a free relay, for Java and Bedrock friends." />
+    <link rel="canonical" href="https://voxelport.github.io/guides/host-minecraft-server-jio-airtel" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="VoxelPort" />
+    <meta property="og:url" content="https://voxelport.github.io/guides/host-minecraft-server-jio-airtel" />
+    <meta property="og:title" content="Host a Minecraft Server on Jio or Airtel, No Port Forwarding" />
+    <meta property="og:description" content="Jio and Airtel use CGNAT, so port forwarding fails. Here is how to host a Minecraft server on them anyway with a free relay, for Java and Bedrock friends." />
+    <meta property="og:image" content="https://voxelport.github.io/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="VoxelPort — host any Minecraft server, your router stays shut" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Host a Minecraft Server on Jio or Airtel, No Port Forwarding" />
+    <meta name="twitter:description" content="Jio and Airtel use CGNAT, so port forwarding fails. Here is how to host a Minecraft server on them anyway with a free relay, for Java and Bedrock friends." />
+    <meta name="twitter:image" content="https://voxelport.github.io/og-image.png" />
+
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" type="image/png" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <link rel="preconnect" href="https://relay.voxelport.in" crossorigin />
+    <link rel="preload" href="/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts.css" />
+    <meta name="theme-color" content="#FAF9F5" />
+    <meta name="application-name" content="VoxelPort" />
+    <script type="module" crossorigin src="/assets/index-D5Ly27C9.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CIsFb_b7.css">
+      <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Host a Minecraft Server on Jio or Airtel, No Port Forwarding","description":"Jio and Airtel use CGNAT, so port forwarding fails. Here is how to host a Minecraft server on them anyway with a free relay, for Java and Bedrock friends.","url":"https://voxelport.github.io/guides/host-minecraft-server-jio-airtel","mainEntityOfPage":"https://voxelport.github.io/guides/host-minecraft-server-jio-airtel","image":"https://voxelport.github.io/og-image.png","datePublished":"2026-10-28","dateModified":"2026-10-28","inLanguage":"en","author":{"@type":"Organization","name":"VoxelPort","url":"https://voxelport.github.io/"},"publisher":{"@type":"Organization","name":"VoxelPort","url":"https://voxelport.github.io/","logo":{"@type":"ImageObject","url":"https://voxelport.github.io/logo.png"}}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"VoxelPort","item":"https://voxelport.github.io/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://voxelport.github.io/guides"},{"@type":"ListItem","position":3,"name":"Host on Jio or Airtel","item":"https://voxelport.github.io/guides/host-minecraft-server-jio-airtel"}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why doesn’t port forwarding work on Jio Fiber?","acceptedAnswer":{"@type":"Answer","text":"Most Jio Fiber and AirFiber connections are behind CGNAT: your router doesn’t get a public IPv4 address, so a forwarded port on your router can’t be reached from the internet. A relay such as VoxelPort avoids the problem because your PC connects out to it."}},{"@type":"Question","name":"Does this work on Airtel Xstream Fiber?","acceptedAnswer":{"@type":"Answer","text":"Yes. Whether or not your Airtel connection has a public IP, VoxelPort only needs an outgoing connection, so it works the same way on Airtel, Jio, ACT, BSNL and other ISPs."}},{"@type":"Question","name":"Can I host from a mobile hotspot?","acceptedAnswer":{"@type":"Answer","text":"Yes, it works on a Jio or Airtel mobile hotspot, because no incoming connections are needed. Watch your data: every player’s traffic goes through your connection."}},{"@type":"Question","name":"Will my friends get good ping?","acceptedAnswer":{"@type":"Answer","text":"VoxelPort has a relay in India and one in Europe, and the app uses whichever is closer to you. Friends near either relay usually get low ping; friends far from both (for example in the Americas) will see higher ping."}}]}</script>
+  </head>
+  <body>
+    <div id="root"><main class="prerender"><p><a href="/">Home</a> / <a href="/guides">Guides</a> / Host on Jio or Airtel</p><h1>Host a Minecraft Server on Jio or Airtel, No Port Forwarding</h1><p>Jio and Airtel use CGNAT, so port forwarding fails. Here is how to host a Minecraft server on them anyway with a free relay, for Java and Bedrock friends.</p>
+<p>You set up a Minecraft server, forwarded port 25565 on your Jio or Airtel router, and your friends still can’t join. You probably did nothing wrong. Most Indian home connections are behind <b>CGNAT</b>, which makes port forwarding impossible. This guide shows how to check, and how to host anyway, without changing any router settings.</p>
+
+<h2 id="why">Why port forwarding doesn’t work on Jio and Airtel</h2>
+<p>There aren’t enough IPv4 addresses for every home, so ISPs share one public address between many customers. This is called <b>carrier-grade NAT (CGNAT)</b>. Your router gets a private address from the ISP instead of a public one, so when a friend connects to “your” IP, they reach the ISP’s equipment, not your router. A port you forward on your router is never reached.</p>
+<p>Jio Fiber and Jio AirFiber use CGNAT on most plans. Many Airtel Xstream connections do too, and mobile data and hotspots always do.</p>
+
+<h2 id="check">How to check if you’re behind CGNAT</h2>
+<ol>
+  <li>Open your router’s admin page (usually <code>192.168.29.1</code> on Jio, <code>192.168.1.1</code> on Airtel) and find the <b>WAN IP</b> or <b>Internet IP</b>.</li>
+  <li>Search “what is my IP” in your browser and compare.</li>
+  <li>If the two are different, or the WAN IP starts with <code>100.64</code>–<code>100.127</code>, <code>10.</code>, <code>172.16</code>–<code>172.31</code> or <code>192.168.</code>, you’re behind CGNAT.</li>
+</ol>
+
+<h2 id="options">Your options</h2>
+<table>
+  <thead><tr><th>Option</th><th>Cost</th><th>Catch</th></tr></thead>
+  <tbody>
+    <tr><td>Ask your ISP for a public / static IP</td><td>Usually paid, often only on business plans</td><td>Then you still have to forward ports and expose your home IP</td></tr>
+    <tr><td>IPv6</td><td>Free</td><td>Every player needs working IPv6, and many don’t</td></tr>
+    <tr><td>LAN tools (Hamachi, ZeroTier, Tailscale)</td><td>Free tiers</td><td>Every friend has to install and set up the same tool</td></tr>
+    <tr><td>A relay (VoxelPort)</td><td>Free</td><td>Your PC must stay on while people play</td></tr>
+  </tbody>
+</table>
+<p>A relay is the easiest because your friends don’t install anything. Your PC opens an <i>outgoing</i> connection to the relay, which CGNAT allows, and the relay gives you a public address. Players connect to the relay, and it passes their connection to your PC.</p>
+
+<h2 id="steps">Step by step: host with VoxelPort</h2>
+<p>Download the <a href="https://github.com/VOXELPORT/VoxelPort-App/releases/download/v2.0.0-beta.2/VoxelPort-Setup.exe">Windows installer</a> (the new app, 2.0 beta; Windows 10 and 11; if Windows warns, click More info → Run anyway; if Windows 11 Smart App Control blocks it, see <a href="/download">the download page</a>). It's free and open source; to host, join our Discord server once.</p>
+<ol>
+  <li>Open VoxelPort and click <b>+ Add Server</b>. Pick a template such as <b>Survival SMP</b>, or choose Vanilla, Paper or Fabric and a Minecraft version.</li>
+  <li>Set the RAM (VoxelPort suggests an amount for your PC), tick <b>I agree to the Minecraft EULA</b>, and click <b>Install &amp; start</b>. VoxelPort downloads the server and the right Java version for you.</li>
+  <li>When the server is online, click <b>Make public</b>. You get an address like <code>play.voxelport.in:26137</code>.</li>
+  <li>Supporters can type a name under <b>Get a custom address</b> and click <b>Claim</b>. Friends can then join with <code>yourname.voxelport.in</code> and no port number.</li>
+  <li>Send the address to your friends. In Minecraft they go to <b>Multiplayer → Add Server</b> and paste it.</li>
+</ol>
+<div class="tip"><b>Already have a server folder?</b> Use <b>Import Existing Server</b>. If you start your server some other way, use <b>Tunnel a server I already run elsewhere</b> and enter its port.</div>
+
+<h2 id="tips">Tips for a smooth server in India</h2>
+<ul>
+  <li><b>Use a wired connection</b> for the PC that hosts the server if you can. Wi-Fi drops cause lag spikes for everyone.</li>
+  <li><b>Upload speed matters more than download.</b> Each player needs a steady stream of data from your PC. Most fiber plans have plenty; mobile hotspots get tight with more than a few players.</li>
+  <li><b>Lower the view distance</b> in the server’s <b>Settings</b> (8–10 chunks is fine) to cut both CPU load and data use.</li>
+  <li><b>Watch TPS</b> in VoxelPort’s performance panel. 20 TPS means the server keeps up; lower means it’s overloaded.</li>
+  <li><b>Bedrock friends?</b> Turn on <b>Let Bedrock players join</b>. See <a href="/guides/minecraft-java-bedrock-crossplay-server">the crossplay guide</a>.</li>
+</ul><h2>Questions</h2><h3>Why doesn’t port forwarding work on Jio Fiber?</h3><p>Most Jio Fiber and AirFiber connections are behind CGNAT: your router doesn’t get a public IPv4 address, so a forwarded port on your router can’t be reached from the internet. A relay such as VoxelPort avoids the problem because your PC connects out to it.</p><h3>Does this work on Airtel Xstream Fiber?</h3><p>Yes. Whether or not your Airtel connection has a public IP, VoxelPort only needs an outgoing connection, so it works the same way on Airtel, Jio, ACT, BSNL and other ISPs.</p><h3>Can I host from a mobile hotspot?</h3><p>Yes, it works on a Jio or Airtel mobile hotspot, because no incoming connections are needed. Watch your data: every player’s traffic goes through your connection.</p><h3>Will my friends get good ping?</h3><p>VoxelPort has a relay in India and one in Europe, and the app uses whichever is closer to you. Friends near either relay usually get low ping; friends far from both (for example in the Americas) will see higher ping.</p><h2>More guides</h2><ul><li><a href="/guides/host-minecraft-server-android-phone">Host a Minecraft Server on Your Android Phone (Free)</a></li><li><a href="/guides/free-minecraft-server-hosting">Free Minecraft Server Hosting: No Sleep, No Queue (2026)</a></li><li><a href="/guides/free-minecraft-hosting-india">Free Minecraft Server Hosting in India (2026)</a></li><li><a href="/guides/how-to-make-a-minecraft-server">How to Make a Minecraft Server for Free (Java + Bedrock)</a></li><li><a href="/guides/minecraft-server-kaise-banaye">Minecraft Server Kaise Banaye: Free, Bina Port Forwarding</a></li><li><a href="/guides/playit-gg-ngrok-hamachi-alternative">playit.gg, ngrok and Hamachi Alternative for Minecraft</a></li><li><a href="/guides/minecraft-server-without-port-forwarding">Host a Minecraft Server Without Port Forwarding (Free)</a></li><li><a href="/guides/play-minecraft-with-friends-different-wifi">Play Minecraft With Friends on Different Wi-Fi</a></li><li><a href="/guides/minecraft-java-bedrock-crossplay-server">Minecraft Java + Bedrock Crossplay Server (Free, 2026)</a></li><li><a href="/guides/free-minecraft-server-address">Free Minecraft Server Address (Custom for Supporters)</a></li><li><a href="/guides/minecraft-server-crash-fixes">Minecraft Server Crashing? Common Errors and Fixes</a></li><li><a href="/guides/minecraft-server-school-college-friends">Minecraft Server for School or College Friends (Free)</a></li><li><a href="/guides/play-minecraft-modpack-with-friends-free">Play a Minecraft Modpack With Friends for Free</a></li><li><a href="/guides/aternos-alternative-no-queue">Free Aternos Alternative With No Queue (Minecraft)</a></li><li><a href="/guides/minecraft-bedrock-server-phone-players">Minecraft Server Your Friends Can Join From Phones</a></li><li><a href="/guides/free-minecraft-server-hosting-europe">Free Minecraft Server Hosting in Europe (Low Ping)</a></li><li><a href="/guides/minecraft-server-dslite-cgnat-europe">Minecraft Server Behind DS-Lite or CGNAT: Host It Anyway</a></li><li><a href="/guides/minecraft-server-ohne-portfreigabe-kostenlos">Minecraft Server ohne Portfreigabe hosten (kostenlos)</a></li></ul><nav><a href="/">Home</a> · <a href="/new-app">The new VoxelPort (move in one minute)</a> · <a href="/features">Features</a> · <a href="/compare">Compare</a> · <a href="/faq">FAQ</a> · <a href="/download">Download</a> · <a href="/guides">Guides</a> · <a href="/servers">Server list</a> · <a href="/status">Relay status</a> · <a href="/support">Support</a> · <a href="/community">Discord community</a> · <a href="/about">About the developer</a> · <a href="/team">Join the team</a> · <a href="https://discord.gg/JAUfmey2fP">Join the Discord</a> · <a href="/legal">Legal &amp; privacy</a> · <a href="https://github.com/VOXELPORT/VoxelPort-App/releases/download/v2.0.0-beta.2/VoxelPort-Setup.exe">Windows installer (direct, the new app 2.0 beta)</a> · <a href="https://github.com/VOXELPORT/VoxelPort-Android/releases/latest/download/VoxelPort.apk">Android APK</a> · <a href="https://www.instagram.com/voxelport.in/">Instagram</a></nav></main></div>
+  </body>
+</html>

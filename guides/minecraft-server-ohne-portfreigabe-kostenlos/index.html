@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/theme-init.js"></script>
+    <!-- With JavaScript, the static text copy (.prerender) stays hidden until React replaces it, so it can't shift as fonts load. -->
+    <script>document.documentElement.classList.add('js')</script>
+    <!-- Page-specific tags below are rewritten for each route by scripts/prerender.mjs. -->
+    <title>Minecraft Server ohne Portfreigabe hosten (kostenlos)</title>
+    <meta name="description" content="Minecraft Server ohne Portfreigabe kostenlos hosten, auch bei DS-Lite und CGNAT. So geht es mit VoxelPort: Java und Bedrock, ohne Router-Einstellungen." />
+    <link rel="canonical" href="https://voxelport.github.io/guides/minecraft-server-ohne-portfreigabe-kostenlos" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="VoxelPort" />
+    <meta property="og:url" content="https://voxelport.github.io/guides/minecraft-server-ohne-portfreigabe-kostenlos" />
+    <meta property="og:title" content="Minecraft Server ohne Portfreigabe hosten (kostenlos)" />
+    <meta property="og:description" content="Minecraft Server ohne Portfreigabe kostenlos hosten, auch bei DS-Lite und CGNAT. So geht es mit VoxelPort: Java und Bedrock, ohne Router-Einstellungen." />
+    <meta property="og:image" content="https://voxelport.github.io/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="VoxelPort — host any Minecraft server, your router stays shut" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Minecraft Server ohne Portfreigabe hosten (kostenlos)" />
+    <meta name="twitter:description" content="Minecraft Server ohne Portfreigabe kostenlos hosten, auch bei DS-Lite und CGNAT. So geht es mit VoxelPort: Java und Bedrock, ohne Router-Einstellungen." />
+    <meta name="twitter:image" content="https://voxelport.github.io/og-image.png" />
+
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" type="image/png" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <link rel="preconnect" href="https://relay.voxelport.in" crossorigin />
+    <link rel="preload" href="/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/fonts.css" />
+    <meta name="theme-color" content="#FAF9F5" />
+    <meta name="application-name" content="VoxelPort" />
+    <script type="module" crossorigin src="/assets/index-D5Ly27C9.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CIsFb_b7.css">
+      <link rel="alternate" hreflang="en" href="https://voxelport.github.io/guides/minecraft-server-without-port-forwarding" />
+    <link rel="alternate" hreflang="de" href="https://voxelport.github.io/guides/minecraft-server-ohne-portfreigabe-kostenlos" />
+    <link rel="alternate" hreflang="x-default" href="https://voxelport.github.io/guides/minecraft-server-without-port-forwarding" />
+      <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Minecraft Server ohne Portfreigabe hosten (kostenlos)","description":"Minecraft Server ohne Portfreigabe kostenlos hosten, auch bei DS-Lite und CGNAT. So geht es mit VoxelPort: Java und Bedrock, ohne Router-Einstellungen.","url":"https://voxelport.github.io/guides/minecraft-server-ohne-portfreigabe-kostenlos","mainEntityOfPage":"https://voxelport.github.io/guides/minecraft-server-ohne-portfreigabe-kostenlos","image":"https://voxelport.github.io/og-image.png","datePublished":"2026-10-28","dateModified":"2026-10-28","inLanguage":"de","author":{"@type":"Organization","name":"VoxelPort","url":"https://voxelport.github.io/"},"publisher":{"@type":"Organization","name":"VoxelPort","url":"https://voxelport.github.io/","logo":{"@type":"ImageObject","url":"https://voxelport.github.io/logo.png"}}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"VoxelPort","item":"https://voxelport.github.io/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://voxelport.github.io/guides"},{"@type":"ListItem","position":3,"name":"Ohne Portfreigabe (DE)","item":"https://voxelport.github.io/guides/minecraft-server-ohne-portfreigabe-kostenlos"}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Muss ich im Router einen Port freigeben?","acceptedAnswer":{"@type":"Answer","text":"Nein. Dein PC baut selbst eine ausgehende Verbindung zum Relay auf. Am Router musst du nichts einstellen."}},{"@type":"Question","name":"Funktioniert das bei DS-Lite oder CGNAT?","acceptedAnswer":{"@type":"Answer","text":"Ja. Bei DS-Lite und CGNAT kommen eingehende IPv4-Verbindungen nicht bis zu deinem Router, aber ein Relay braucht keine eingehende Verbindung."}},{"@type":"Question","name":"Was kostet VoxelPort?","acceptedAnswer":{"@type":"Answer","text":"Nichts. Die App, das Relay und die Adresse sind kostenlos, ohne Konto und ohne Warteschlange."}},{"@type":"Question","name":"Müssen meine Freunde etwas installieren?","acceptedAnswer":{"@type":"Answer","text":"Nein. Sie öffnen Minecraft, gehen auf Mehrspieler, Server hinzufügen, fügen deine Adresse ein und treten bei."}}]}</script>
+  </head>
+  <body>
+    <div id="root"><main class="prerender"><p><a href="/">Home</a> / <a href="/guides">Guides</a> / Ohne Portfreigabe (DE)</p><h1>Minecraft Server ohne Portfreigabe hosten (kostenlos)</h1><p>Minecraft Server ohne Portfreigabe kostenlos hosten, auch bei DS-Lite und CGNAT. So geht es mit VoxelPort: Java und Bedrock, ohne Router-Einstellungen.</p>
+<p>Du willst mit Freunden Minecraft spielen, aber die Portfreigabe im Router klappt nicht? Bei vielen Anschlüssen liegt das an DS-Lite oder CGNAT: Dein Anbieter gibt dir keine eigene öffentliche IPv4-Adresse, und eingehende Verbindungen erreichen deinen Router nie. Mit einem Relay kannst du trotzdem einen Server hosten, ohne irgendetwas freizugeben.</p>
+
+<h2 id="relay">So funktioniert ein Relay</h2>
+<p>Router blockieren eingehende Verbindungen, erlauben aber ausgehende. Dein PC verbindet sich deshalb von sich aus mit dem Relay und hält die Verbindung offen. Das Relay gibt dir eine öffentliche Adresse. Wenn ein Freund sich damit verbindet, leitet das Relay den Verkehr durch die bestehende Verbindung zu deinem PC. Deine Heim-IP bleibt dabei für deine Mitspieler unsichtbar.</p>
+<p>VoxelPort hat ein Relay in Europa, damit der Ping für Spieler in Deutschland und den Nachbarländern niedrig bleibt.</p>
+
+<h2 id="schritte">In fünf Schritten einrichten</h2>
+<p>Download the <a href="https://github.com/VOXELPORT/VoxelPort-App/releases/download/v2.0.0-beta.2/VoxelPort-Setup.exe">Windows installer</a> (the new app, 2.0 beta; Windows 10 and 11; if Windows warns, click More info → Run anyway; if Windows 11 Smart App Control blocks it, see <a href="/download">the download page</a>). It's free and open source; to host, join our Discord server once.</p>
+<ol>
+  <li>Klicke auf <b>+ Add Server</b>, wähle Vanilla, Paper oder Fabric und eine Version und klicke auf <b>Install &amp; start</b>. Java wird bei Bedarf automatisch installiert.</li>
+  <li>Sobald der Server <b>Online</b> anzeigt, klicke auf <b>Make public</b>. Die Einstellung <b>Region</b> steht auf <b>Auto</b>, dann wählt die App das schnellere Relay selbst.</li>
+  <li>Kopiere die angezeigte Adresse.</li>
+  <li>Deine Freunde öffnen Minecraft, gehen auf <b>Mehrspieler → Server hinzufügen</b>, fügen die Adresse ein und treten bei.</li>
+  <li>Für Bedrock-Spieler auf Handy oder Konsole schaltest du in den Servereinstellungen <b>Let Bedrock players join</b> ein.</li>
+</ol>
+
+<h2 id="hinweise">Gut zu wissen</h2>
+<ul>
+  <li><b>Dein PC muss laufen</b>, solange gespielt wird. VoxelPort ist kein 24/7-Hosting.</li>
+  <li><b>Das Relay in Europa ist neu</b> und wird von einem Studenten betrieben, daher gibt es keine Verfügbarkeitsgarantie. Fällt es aus, stelle die Region auf Indien, dann läuft dein Server weiter.</li>
+  <li><b>Datenschutz:</b> Das Relay schreibt keine IP-Adressen in seine Logs. Einzelheiten stehen in der <a href="/legal">Datenschutzerklärung</a> (auf Englisch).</li>
+  <li>Mehr zu DS-Lite und CGNAT: <a href="/guides/minecraft-server-dslite-cgnat-europe">Guide auf Englisch</a>.</li>
+</ul><h2>Questions</h2><h3>Muss ich im Router einen Port freigeben?</h3><p>Nein. Dein PC baut selbst eine ausgehende Verbindung zum Relay auf. Am Router musst du nichts einstellen.</p><h3>Funktioniert das bei DS-Lite oder CGNAT?</h3><p>Ja. Bei DS-Lite und CGNAT kommen eingehende IPv4-Verbindungen nicht bis zu deinem Router, aber ein Relay braucht keine eingehende Verbindung.</p><h3>Was kostet VoxelPort?</h3><p>Nichts. Die App, das Relay und die Adresse sind kostenlos, ohne Konto und ohne Warteschlange.</p><h3>Müssen meine Freunde etwas installieren?</h3><p>Nein. Sie öffnen Minecraft, gehen auf Mehrspieler, Server hinzufügen, fügen deine Adresse ein und treten bei.</p><h2>More guides</h2><ul><li><a href="/guides/host-minecraft-server-android-phone">Host a Minecraft Server on Your Android Phone (Free)</a></li><li><a href="/guides/free-minecraft-server-hosting">Free Minecraft Server Hosting: No Sleep, No Queue (2026)</a></li><li><a href="/guides/free-minecraft-hosting-india">Free Minecraft Server Hosting in India (2026)</a></li><li><a href="/guides/how-to-make-a-minecraft-server">How to Make a Minecraft Server for Free (Java + Bedrock)</a></li><li><a href="/guides/minecraft-server-kaise-banaye">Minecraft Server Kaise Banaye: Free, Bina Port Forwarding</a></li><li><a href="/guides/playit-gg-ngrok-hamachi-alternative">playit.gg, ngrok and Hamachi Alternative for Minecraft</a></li><li><a href="/guides/host-minecraft-server-jio-airtel">Host a Minecraft Server on Jio or Airtel, No Port Forwarding</a></li><li><a href="/guides/minecraft-server-without-port-forwarding">Host a Minecraft Server Without Port Forwarding (Free)</a></li><li><a href="/guides/play-minecraft-with-friends-different-wifi">Play Minecraft With Friends on Different Wi-Fi</a></li><li><a href="/guides/minecraft-java-bedrock-crossplay-server">Minecraft Java + Bedrock Crossplay Server (Free, 2026)</a></li><li><a href="/guides/free-minecraft-server-address">Free Minecraft Server Address (Custom for Supporters)</a></li><li><a href="/guides/minecraft-server-crash-fixes">Minecraft Server Crashing? Common Errors and Fixes</a></li><li><a href="/guides/minecraft-server-school-college-friends">Minecraft Server for School or College Friends (Free)</a></li><li><a href="/guides/play-minecraft-modpack-with-friends-free">Play a Minecraft Modpack With Friends for Free</a></li><li><a href="/guides/aternos-alternative-no-queue">Free Aternos Alternative With No Queue (Minecraft)</a></li><li><a href="/guides/minecraft-bedrock-server-phone-players">Minecraft Server Your Friends Can Join From Phones</a></li><li><a href="/guides/free-minecraft-server-hosting-europe">Free Minecraft Server Hosting in Europe (Low Ping)</a></li><li><a href="/guides/minecraft-server-dslite-cgnat-europe">Minecraft Server Behind DS-Lite or CGNAT: Host It Anyway</a></li></ul><nav><a href="/">Home</a> · <a href="/new-app">The new VoxelPort (move in one minute)</a> · <a href="/features">Features</a> · <a href="/compare">Compare</a> · <a href="/faq">FAQ</a> · <a href="/download">Download</a> · <a href="/guides">Guides</a> · <a href="/servers">Server list</a> · <a href="/status">Relay status</a> · <a href="/support">Support</a> · <a href="/community">Discord community</a> · <a href="/about">About the developer</a> · <a href="/team">Join the team</a> · <a href="https://discord.gg/JAUfmey2fP">Join the Discord</a> · <a href="/legal">Legal &amp; privacy</a> · <a href="https://github.com/VOXELPORT/VoxelPort-App/releases/download/v2.0.0-beta.2/VoxelPort-Setup.exe">Windows installer (direct, the new app 2.0 beta)</a> · <a href="https://github.com/VOXELPORT/VoxelPort-Android/releases/latest/download/VoxelPort.apk">Android APK</a> · <a href="https://www.instagram.com/voxelport.in/">Instagram</a></nav></main></div>
+  </body>
+</html>

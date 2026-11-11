@@ -1,0 +1,107 @@
+# VoxelPort
+
+> Free Minecraft server hosting from your PC or Android phone: no sleep, no queue, no RAM cap, no port forwarding. Relays in India and Europe. Java + Bedrock.
+
+VoxelPort is a free, open-source (MIT) desktop app for Windows that creates or imports a Minecraft: Java Edition server on your own PC and puts it online through a VoxelPort relay, so friends can join without port forwarding, even behind CGNAT (common on Jio, Airtel and mobile data). There is no account, no ads and no paid tier.
+
+Key facts:
+- Players join with plain Minecraft at a free address like play.voxelport.in:26137. Supporters can claim a custom address like yourname.voxelport.in (no port).
+- Players join at play.voxelport.in (India) or play-eu.voxelport.in (Europe); VoxelPort has a relay in each region.
+- Unlike free cloud hosts (Aternos, Minehut, Falix), the server does not sleep, has no start queue and can use as much RAM as the PC can spare. Trade-off: the PC must stay on while people play.
+- Java + Bedrock crossplay with one switch (Geyser + Floodgate). Vanilla, Paper, Fabric and modpacks. Installs the right Java automatically.
+- Download: the Windows installer, the new app (https://github.com/VOXELPORT/VoxelPort-App/releases/download/v2.0.0-beta.2/VoxelPort-Setup.exe). Android app (host from a phone): https://github.com/VOXELPORT/VoxelPort-Android/releases/latest
+
+## Guides
+
+- [Host a Minecraft Server on Your Android Phone (Free)](https://voxelport.github.io/guides/host-minecraft-server-android-phone): Run a real Minecraft: Java server on your Android phone with the free VoxelPort app. Friends join from anywhere, no port forwarding, Java + Bedrock.
+- [Free Minecraft Server Hosting: No Sleep, No Queue (2026)](https://voxelport.github.io/guides/free-minecraft-server-hosting): Free Minecraft hosting compared: Aternos, Minehut, Falix and your own PC with VoxelPort. What each free plan limits, and which to pick for your group.
+- [Free Minecraft Server Hosting in India (2026)](https://voxelport.github.io/guides/free-minecraft-hosting-india): Free Minecraft hosting in India compared: free hosts vs your own PC with VoxelPort. Works on Jio and Airtel, no port forwarding, low ping from an India relay.
+- [How to Make a Minecraft Server for Free (Java + Bedrock)](https://voxelport.github.io/guides/how-to-make-a-minecraft-server): Make a free Minecraft server with friends in minutes: install VoxelPort, press Start, share the address. No port forwarding. Java and Bedrock players can join.
+- [Minecraft Server Kaise Banaye: Free, Bina Port Forwarding](https://voxelport.github.io/guides/minecraft-server-kaise-banaye): Minecraft server kaise banaye, free mein aur bina port forwarding ke. Jio aur Airtel par bhi chalta hai. VoxelPort se step-by-step Hinglish guide.
+- [playit.gg, ngrok and Hamachi Alternative for Minecraft](https://voxelport.github.io/guides/playit-gg-ngrok-hamachi-alternative): A free playit.gg, ngrok and Hamachi alternative made only for Minecraft: no port forwarding, no signup for friends, friends join with plain Minecraft. What is different.
+- [Host a Minecraft Server on Jio or Airtel, No Port Forwarding](https://voxelport.github.io/guides/host-minecraft-server-jio-airtel): Jio and Airtel use CGNAT, so port forwarding fails. Here is how to host a Minecraft server on them anyway with a free relay, for Java and Bedrock friends.
+- [Host a Minecraft Server Without Port Forwarding (Free)](https://voxelport.github.io/guides/minecraft-server-without-port-forwarding): Host a Minecraft Java server from your own PC without touching your router. How tunnels and relays work, how they compare, and a free step-by-step setup.
+- [Play Minecraft With Friends on Different Wi-Fi](https://voxelport.github.io/guides/play-minecraft-with-friends-different-wifi): “Open to LAN” only works on the same Wi-Fi. Here are the ways to play Minecraft with friends who live somewhere else — free and paid, for Java and Bedrock.
+- [Minecraft Java + Bedrock Crossplay Server (Free, 2026)](https://voxelport.github.io/guides/minecraft-java-bedrock-crossplay-server): Make a Minecraft server that Java and Bedrock players can both join: PC, phone and console friends on one address with Geyser and Floodgate.
+- [Free Minecraft Server Address (Custom for Supporters)](https://voxelport.github.io/guides/free-minecraft-server-address): How to get a free Minecraft server address, and a custom one with no port number like yourname.voxelport.in. What you get free and what supporters get.
+- [Minecraft Server Crashing? Common Errors and Fixes](https://voxelport.github.io/guides/minecraft-server-crash-fixes): Fix common Minecraft server errors: out of memory, wrong Java version, port in use, failed to bind, mod conflicts. What each crash message means and the fix.
+- [Minecraft Server for School or College Friends (Free)](https://voxelport.github.io/guides/minecraft-server-school-college-friends): Make a free Minecraft server for your school or college friends: no router access, no hostel Wi-Fi settings, no port forwarding. Works from a laptop or phone.
+- [Play a Minecraft Modpack With Friends for Free](https://voxelport.github.io/guides/play-minecraft-modpack-with-friends-free): Host a Minecraft modpack server for free and play with friends: import your server folder, put it online with VoxelPort. No port forwarding or paid hosting.
+- [Free Aternos Alternative With No Queue (Minecraft)](https://voxelport.github.io/guides/aternos-alternative-no-queue): A free Aternos alternative with no queue and no sleep: host Minecraft on your own PC with VoxelPort and use as much RAM as it can spare. Trade-offs explained.
+- [Minecraft Server Your Friends Can Join From Phones](https://voxelport.github.io/guides/minecraft-bedrock-server-phone-players): Make a Minecraft server friends can join from phones and consoles. Turn on Bedrock support in VoxelPort and everyone joins on one address, no port forwarding.
+- [Free Minecraft Server Hosting in Europe (Low Ping)](https://voxelport.github.io/guides/free-minecraft-server-hosting-europe): Free Minecraft server hosting for Europe with no port forwarding and low ping from a European relay. Works behind DS-Lite and CGNAT, Java and Bedrock.
+- [Minecraft Server Behind DS-Lite or CGNAT: Host It Anyway](https://voxelport.github.io/guides/minecraft-server-dslite-cgnat-europe): Behind DS-Lite or CGNAT with no public IPv4? You can still host a Minecraft server: VoxelPort connects out to a relay, so nothing needs opening on your router.
+- [Minecraft Server ohne Portfreigabe hosten (kostenlos)](https://voxelport.github.io/guides/minecraft-server-ohne-portfreigabe-kostenlos): Minecraft Server ohne Portfreigabe kostenlos hosten, auch bei DS-Lite und CGNAT. So geht es mit VoxelPort: Java und Bedrock, ohne Router-Einstellungen.
+
+## FAQ
+
+### Is VoxelPort moving to a new app?
+
+Yes. VoxelPort was rebuilt on newer technology: the new app (2.0 beta, Windows) is about 3 MB instead of over 100 MB and does the same things, and new features only come to it. In your current app (1.18.0) press “Update to the new VoxelPort”: it downloads and checks the new app, installs it, brings your servers, backups, VoxelPort ID, address and settings across, then removes the old app. Your server folders and worlds are never touched, and if anything goes wrong the old app and your data stay as they are. You sign in with Discord once in the new app. Microsoft Store users: the Store cannot install another app, so download the new one from the download page, open it and use its banner to bring your data over, then remove the Store version.
+
+### Windows 11 says Smart App Control blocked the installer. What do I do?
+
+The new app is not code-signed yet, so with Smart App Control on, Windows blocks its installer and there is no “Run anyway” button. To install it, switch Smart App Control off: Settings › Privacy & security › Windows Security › App & browser control › Smart App Control settings › Off. Windows cannot turn it back on later without reinstalling Windows, so if you would rather not, keep using your current VoxelPort, which keeps working.
+
+### How do I host a Minecraft server without port forwarding?
+
+Install VoxelPort, create or import a server, press Start and then Make public. VoxelPort connects your server out to its relay, which gives you a public address. Players connect to the relay, so nothing has to be opened on your router.
+
+### Is VoxelPort really free?
+
+Yes. The app and the relay are free and open source under the MIT license. There are no ads or player limits, and players need no account. Hosts sign in with Discord and join our Discord server.
+
+### Do my friends need to install anything?
+
+No. Java players use normal Minecraft: Java Edition and paste your address into Multiplayer → Add Server. Bedrock players use their normal game too.
+
+### Is there a relay in Europe?
+
+Yes. VoxelPort has a relay in India and one in Europe (from app version 1.11). The Region setting is on Auto by default and picks the faster one for you; you can also choose a region by hand. Custom addresses are only on the India relay for now.
+
+### Does it work behind DS-Lite or CGNAT?
+
+Yes. DS-Lite and CGNAT block incoming IPv4 connections, which breaks port forwarding. VoxelPort needs no incoming connection: your PC connects out to the relay, so it works on those connections too.
+
+### Can Bedrock players on phones and consoles join?
+
+Yes. Turn on “Let Bedrock players join” in your server’s settings and VoxelPort installs Geyser and Floodgate for you (Paper and Fabric servers). Bedrock players join on the same address and port.
+
+### Can I get my own server address?
+
+Yes, as a supporter. Supporters can claim a custom name so players join with yourname.voxelport.in, with no port number needed in Java Edition. Everyone gets a free address like play.voxelport.in:26137.
+
+### Does it work with mods, plugins and modpacks?
+
+Yes. VoxelPort can set up Vanilla, Paper and Fabric servers, import any server folder you already have, or put any server that is already running online.
+
+### Does VoxelPort hide my home IP address?
+
+Yes. Players only ever connect to the relay, never to your PC, so your home IP address isn’t exposed to them.
+
+### Where can I get help or ask a question?
+
+In the VoxelPort Discord (https://discord.gg/JAUfmey2fP): ask in #help, suggest features, and hear about every release first. Friends who only play need no Discord at all; hosts sign in with Discord in the app. There are also step-by-step guides on this site.
+
+### How do I keep my address when I get a new PC or phone?
+
+Back it up first. In the app, open Address backup and choose a passphrase of at least 12 characters. The app locks your address key with it on your device and saves only the locked copy to your Discord account, so VoxelPort cannot read it and cannot recover a forgotten passphrase. On the new PC or phone, sign in with Discord, open Address backup and restore it. The PC app and the Android app use the same backup, so you can move between them. It needs the latest version of the app.
+
+### How is VoxelPort different from playit.gg or ngrok?
+
+VoxelPort is made only for Minecraft: it sets up the server and Java for you, adds Bedrock crossplay and a free public address (custom names for supporters), asks hosts to sign in with Discord and join our server instead of making a password account, and is fully open source.
+
+## Other pages
+
+- [Features](https://voxelport.github.io/features): everything the app does, and direct routing.
+- [Compare](https://voxelport.github.io/compare): VoxelPort next to playit.gg, ngrok and port forwarding.
+- [FAQ](https://voxelport.github.io/faq)
+- [Download](https://voxelport.github.io/download): Windows installer and Android.
+- [Support](https://voxelport.github.io/support): tip jar and supporter perks.
+- [Community](https://voxelport.github.io/community): the VoxelPort Discord (https://discord.gg/JAUfmey2fP), for help, showing servers and release news.
+- [About](https://voxelport.github.io/about): who made VoxelPort (a student developer in India), how it started and is built, the Local Miner project and developer it comes from, and Akshat Mehta, who manages the server.
+- [Join the team](https://voxelport.github.io/team): volunteer roles: Discord moderators, developers, testers, translators and guide writers.
+- [Public server list](https://voxelport.github.io/servers): Minecraft servers hosted with VoxelPort that are online now.
+- [Relay status](https://voxelport.github.io/status): live status and ping of the relays.
+- [License, privacy and terms](https://voxelport.github.io/legal)
+- [Source code](https://github.com/VOXELPORT)
